@@ -283,7 +283,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <p>Ping the private IP address of the domain controller vm using the "ping" command to test connectivity</p>
 
-<h3>Step 44.</h3>
+<h3>Step 45.</h3>
 
 ![45  ping success](https://github.com/user-attachments/assets/81de23ad-3413-47f6-b0df-540282513331)
 
