@@ -14,7 +14,7 @@ In this project, I create two virtual machines, one running Windows Server to ac
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (21H2)
+- Windows 10 Pro</b> (22H2)
 - Windows Server</b>
 
 <h2>Project Walk-Through:</h2>
