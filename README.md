@@ -21,410 +21,289 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h3>Step 1.</h3>
 
-![1  search vms](https://github.com/user-attachments/assets/8f347c9d-2c6f-4eb6-bb2d-ccdc6447ae70)
+![1  click create](https://github.com/user-attachments/assets/65050d87-88a2-4449-832c-524a20f5d03d)
 
-<p>Search for virtual machines in the Azure search bar</p>
+<p>Go to resource groups in Azure and click Create</p>
 
 <h3>Step 2.</h3>
 
-![2  click create](https://github.com/user-attachments/assets/e9f45eb3-5adb-4d18-91d9-ba355d8af952)
+![2  review   create](https://github.com/user-attachments/assets/7c5f795b-4ecb-4f11-a7a7-c4ec7d2c0289)
 
-<p>Click create to start the creation of a new Azure virtual machine</p>
+<p>Name your resource group, select your region, then click Review+Create</p>
 
 <h3>Step 3.</h3>
 
-![3  creating vm](https://github.com/user-attachments/assets/a8933551-d60a-4840-a340-9f69e9a824c9)
+![3  create](https://github.com/user-attachments/assets/4d63a03c-85f6-49c0-9c9d-ad6a1e451d03)
 
-<p>Create a new resource group named osTicket. Name the virtual machine osticket-vm. Select Canada Central for the region for space requirements. Select Windows 10 Pro, version 22H2 for the image type. Pick a preferrable size of 2vcpus and 8 GiB of memory.</p>
+<p>Click create</p>
 
 <h3>Step 4.</h3>
 
-![4  vm user   pass](https://github.com/user-attachments/assets/4ea30ed7-ef86-4bf6-97ae-88b9b7f1f3ef)
+![4  search virtual network](https://github.com/user-attachments/assets/56c69879-2a8d-40fa-9e6d-b5617d87bb14)
 
-<p>Create a username and password for the virtual machine that you will remember. Check the licensing box then select Next</p>
+<p>Search for virtual networks in Azure</p>
 
 <h3>Step 5.</h3>
 
-![5  next](https://github.com/user-attachments/assets/a4c5502c-7110-433f-b8b5-27412a98894d)
+![5  click create](https://github.com/user-attachments/assets/d48a5931-2492-4ec6-bdee-b6d008f97255)
 
-<p>Select Next : Networking ></p>
+<p>Click create virtual network</p>
 
 <h3>Step 6.</h3>
 
-![6  review](https://github.com/user-attachments/assets/1272038b-5da6-4bc5-b751-963cace2cc2e)
+![6  review   create vnet](https://github.com/user-attachments/assets/99d68892-f8b3-4643-bc2b-d0fbe25a4d8e)
 
-<p>Select Review + create</p>
+<p>Select the resource group you created, name the Virtual Network, select the region, then click Review + create</p>
 
 <h3>Step 7.</h3>
 
-![7  create vm](https://github.com/user-attachments/assets/1b8f93ee-a871-4106-b16d-a51fe3b0d45b)
+![7  click create](https://github.com/user-attachments/assets/b543731b-65eb-4198-ae2b-32d1777b3653)
 
-<p>Select create</p>
+<p>Click create</p>
 
 <h3>Step 8.</h3>
 
-![8  vm created](https://github.com/user-attachments/assets/0b76078c-2bfe-4073-9a5e-b6867504aaf9)
+![8  VNet deployed](https://github.com/user-attachments/assets/5cdc118f-6ea4-46a1-ae25-cf0d5d292f12)
 
-<p>The virtual machine has sucessfully been deployed. Next click go to resource.</p>
+<p>The virtual network has sucessfully been deployed.</p>
 
 <h3>Step 9.</h3>
 
-![9  copy public ip](https://github.com/user-attachments/assets/6532f963-cb25-4139-8140-864e49364589)
+![9  search virtual machines](https://github.com/user-attachments/assets/2d64a2d6-448d-4276-86b2-78e28f5cd61d)
 
-<p>Under networking, grab the public IP address to be used in Remote Desktop</p>
+<p>Search and select virtual machines in Azure</p>
 
 <h3>Step 10.</h3>
 
-![10  open remote desktop   add public ip](https://github.com/user-attachments/assets/9aaf1d45-b66b-447d-bf50-d15bd3b69ea3)
+![10  click create vm](https://github.com/user-attachments/assets/dd7809b7-35cf-4eeb-a408-a14afd6a5c5f)
 
-<p>Open Remote Desktop Connection and enter the public IP address obtained from the VM. Then click connect</p>
+<p>Click create Azure virtual machine</p>
 
 <h3>Step 11.</h3>
 
-![11  more choices](https://github.com/user-attachments/assets/77b1b497-505c-4709-b0a8-3d2b33451842)
+![11  dc settings](https://github.com/user-attachments/assets/902ca6d0-b2aa-4391-958b-024bcb20e4c9)
 
-<p>Select more choices, use a different account, and then enter the credentials of the VM that you defined earlier. Then click OK</p>
+<p>Select the resource group you created, name the virtual machine, select the region, choose Windows Server 2022 as the image, use a size of 2 vcpus, 8GiB memory. This vm will serve as our domain controller.</p>
 
 <h3>Step 12.</h3>
 
-![12  link for osticket files](https://github.com/user-attachments/assets/0f494df3-afe9-436d-8de3-134d7746547c)
+![12  dc user pass](https://github.com/user-attachments/assets/0a781c85-f739-40d6-9b32-7dcc262fba58)
 
-<p>Download the required files with the link provided <a href="https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD">here</a></p>
+<p>Create a username and password for this vm, then click Next: Disks ></p>
 
 <h3>Step 13.</h3>
 
-![13  download](https://github.com/user-attachments/assets/155bfdfa-8389-4f72-aa81-1688c844c004)
+![13  click next networking](https://github.com/user-attachments/assets/6ea97c5b-e7d1-49e4-87d2-c5d8352879a6)
 
-<p>Click download anyway</p>
+<p>Click Next : Networking ></p>
 
 <h3>Step 14.</h3>
 
-![14  open folder](https://github.com/user-attachments/assets/596b469f-e2d5-456e-a522-bcffbc69a0ef)
+![14  dc setup network](https://github.com/user-attachments/assets/7e568bd3-22e5-43e9-8ede-cfade4359fba)
 
-<p>Select the folder icon to open the newly downloaded folder</p>
+<p>Select the virtual network you created, choose the default subnet, then click Review + create</p>
 
 <h3>Step 15.</h3>
 
-![15  click extract](https://github.com/user-attachments/assets/f6ef6912-e67b-4a4a-a318-04d0b3c551da)
+![15  click create](https://github.com/user-attachments/assets/f137d64d-c637-4667-85ad-e8f4d4296e34)
 
-<p>Right click the zip file and select extract all</p>
+<p>Click create</p>
 
 <h3>Step 16.</h3>
 
-![16  extract location](https://github.com/user-attachments/assets/831fc186-a75d-4689-8ca8-c70e6796b709)
+![16  dc deployed](https://github.com/user-attachments/assets/2fb5b95b-2f5d-4d7a-bc94-36edf22085f6)
 
-<p>Browse or type in Desktop to choose the extraction location then click extract</p>
+<p>The virtual machine Windows server that will act as our domain controller has now been deployed</p>
 
 <h3>Step 17.</h3>
 
-![17  extract complete](https://github.com/user-attachments/assets/db72caa8-3075-4d32-8c1f-53de5ce8f1df)
+![17  create another vm](https://github.com/user-attachments/assets/65df551b-b50a-4014-8ed3-f79e7d128c75)
 
-<p>The newly extracted folder should have now appeared at the designated location</p>
+<p>Search virtual machines again and click create to make another one</p>
 
 <h3>Step 18.</h3>
 
-![18  open control panel](https://github.com/user-attachments/assets/2e24aad3-2edd-409d-918e-f671fa804fae)
+![18  client setup](https://github.com/user-attachments/assets/a0b26a99-d8a5-4642-b4dd-ccdb9c560610)
 
-<p>Open control panel by typing it in the Windows search bar</p>
+<p>Select the resource group that was created, name the virtual machine, select the region, select Windows 10 Pro 22H2 as the image, select a size of 2vcpus and 8GiB memory. This virtual machine will serve as our client that we will later add to the domain controller</p>
 
 <h3>Step 19.</h3>
 
-![19  go to programs](https://github.com/user-attachments/assets/c3edd406-214a-4f8a-a2f2-89dd38b3fc5c)
+![19  client user   pass](https://github.com/user-attachments/assets/05cd23fb-a87c-4991-b51a-a6ec9321a5b3)
 
-<p>Navigate to "Uninstall a program"</p>
+<p>Create a username and password for the client vm, check the box, then click Next : Disks ></p>
 
 <h3>Step 20.</h3>
 
-![20  enabling iis   cgi](https://github.com/user-attachments/assets/80e663d3-ad4a-499a-963f-69976e05c28c)
+![20  next networking](https://github.com/user-attachments/assets/850e9220-e792-4376-9e5a-3f3dfe6fe46e)
 
-<p>Click on "Turn Windows features on or off", then enable all of the following inside Internet Information Services as shown in the picture above.</p>
+<p>Click Next : Networking ></p>
 
 <h3>Step 21.</h3>
 
-![21  open osticket files](https://github.com/user-attachments/assets/d2d1268d-8a4d-4d25-8175-ed9f7cd88c35)
+![21  review   create](https://github.com/user-attachments/assets/1c8b1492-d755-485b-a048-1dc8683ee98f)
 
-<p>Now open the newly extracted folder osTicket-Installation-files</p>
+<p>Select the virtual network we created earlier, select the default subnet, then click Review + create</p>
 
 <h3>Step 22.</h3>
 
-![22  install php manager](https://github.com/user-attachments/assets/ac32a691-f24e-4691-b664-9bb73e90c101)
+![22  click create](https://github.com/user-attachments/assets/14b57468-5c21-4d0e-b064-11c7e427a20c)
 
-<p>Double-click and install PHP Manager</p>
+<p>Click create</p>
 
 <h3>Step 23.</h3>
 
-![23  installation complete](https://github.com/user-attachments/assets/cd292646-8012-42e8-b665-7b373748d2c7)
+![23  client deployed](https://github.com/user-attachments/assets/9d03f149-3212-4e88-a859-0f28f7760d6c)
 
-<p>Close installation prompt</p>
+<p>The virtual machine serving as our client has now been deployed</p>
 
 <h3>Step 24.</h3>
 
-![24  install rewrite](https://github.com/user-attachments/assets/c8bf4e73-94d1-4d9f-a2cf-ddf37c80b892)
+![24  dc-1 network settings](https://github.com/user-attachments/assets/c1605581-5b95-44e1-8512-ee3b34d12bd2)
 
-<p>Double-click and install Rewrite</p>
+<p>Go to the domain controller vm, go under networking, and click network settings</p>
 
 <h3>Step 25.</h3>
 
-![25  create php folder c drive](https://github.com/user-attachments/assets/a90f2667-9057-4213-94b0-62605305e757)
+![25  click NIC](https://github.com/user-attachments/assets/9f7ce47d-a63e-475e-9109-4afbbc9aec6d)
 
-<p>Create a "PHP" folder within the C: drive</p>
+<p>Click on the Network Interface Card</p>
 
 <h3>Step 26.</h3>
 
-![26  click extract php](https://github.com/user-attachments/assets/e813805b-d430-4d38-ba10-02ccf01a25a0)
+![26  click ipconfig](https://github.com/user-attachments/assets/46f0a17e-503c-48df-b362-842e22a164cb)
 
-<p>Right click and extract the php folder</p>
+<p>Click on ipconfig1</p>
 
 <h3>Step 27.</h3>
 
-![27  exctract to c](https://github.com/user-attachments/assets/9ec2b722-8300-45c6-a15b-c3298e5f1421)
+![27  change to static](https://github.com/user-attachments/assets/b8bc44bd-7686-4eb5-b331-f139bdd126ce)
 
-<p>Extract to the newly created PHP folder in the C: drive</p>
+<p>Change the private IP address to "static" then click save</p>
 
 <h3>Step 28.</h3>
 
-![28  install c++ visual](https://github.com/user-attachments/assets/be04d04a-c78d-41e1-b8dc-39dbf277309b)
+![28  private ip updated](https://github.com/user-attachments/assets/e4de78c8-bd08-411f-b973-3b57ed25b879)
 
-<p>Install Microsoft Visual C++</p>
+<p>The private IP address should now be static. This ensures the private IP will never change, preventing any connectivity issues from the client vm to the domain controller vm in the future.</p>
 
 <h3>Step 29.</h3>
 
-![29  install MySQL](https://github.com/user-attachments/assets/939e0645-0e0f-4382-9505-c5ad1341d575)
+![29  get dc-1 public ip](https://github.com/user-attachments/assets/e233878d-9c76-4c81-9467-0717bccf6cd1)
 
-<p>Install MySQL Server</p>
+<p>Go back to networking of the domain controller, then grab the public IP address</p>
 
 <h3>Step 30.</h3>
 
-![30  launch config](https://github.com/user-attachments/assets/8a2463f6-86aa-4367-86d2-b8fc590f71ef)
+![30  connect with rdc](https://github.com/user-attachments/assets/fc24b34c-d64d-4fa7-a172-7416a68e2ab3)
 
-<p>Select launch check-box and click finish</p>
+<p>Enter the public IP into Remote Desktop Connection, then click Connect</p>
 
 <h3>Step 31.</h3>
 
-![31  standard config](https://github.com/user-attachments/assets/45f48fbc-9bcd-4058-861e-421b19f49611)
+![31  enter dc credentials](https://github.com/user-attachments/assets/f64dc190-6561-4af2-bf73-7e9a5147a9a5)
 
-<p>Select standard config and click next</p>
+<p>Enter the credentials for the domain controller vm, then click OK</p>
 
 <h3>Step 32.</h3>
 
-![32  sql user   pass](https://github.com/user-attachments/assets/fdb42c93-84d9-4e5f-84c9-32e40889fc12)
+![32  go to windows firewall](https://github.com/user-attachments/assets/02a7c881-a937-4664-a8d7-8e50932194d1)
 
-<p>Enter a username and password, preferrably root and root for the sake of the lab. Then click next</p>
+<p>Once your inside the domain controller vm, type "wf.msc" into the windows search bar and click it</p>
 
 <h3>Step 33.</h3>
 
-![33  execute](https://github.com/user-attachments/assets/014d186b-8cbc-447c-b49e-ded3c532276c)
+![33  disable firewall](https://github.com/user-attachments/assets/4d46171a-0778-4199-8409-b1a1c27aca44)
 
-<p>Click execute</p>
+<p>This will take you to Windows Firewall. Click "Windows Defender Firewall Properties" then set the Firewall state to "Off" for Domain profile, Private profile, and Public profile. Then click Apply and OK. This is for intended lab purposes only</p>
 
 <h3>Step 34.</h3>
 
-![34  finish](https://github.com/user-attachments/assets/6413f6e8-5ac4-4c16-8edd-91915ec560d0)
+![34  disabled](https://github.com/user-attachments/assets/24c67c59-d079-495d-a674-1e30bd24ddf0)
 
-<p>Click finish</p>
+<p>The firewall should now be disbaled for all profiles</p>
 
 <h3>Step 35.</h3>
 
-![35  run iis as admin](https://github.com/user-attachments/assets/79c42c89-e5d2-4e3c-ae18-810e6495bca9)
+![35  get dc-1 private ip](https://github.com/user-attachments/assets/262d0a94-d7cf-473a-9d0a-8b46740e3b28)
 
-<p>Search IIS Manager in the windows search bar and click run as administrator</p>
+<p>Go back to Azure, go to the domain controller vm, go to Networking, then grab the private IP address</p>
 
 <h3>Step 36.</h3>
 
-![36  go to php manager](https://github.com/user-attachments/assets/d3012807-7dd4-4e62-b964-4248ab3a77c6)
+![36  go to client-1 network settings](https://github.com/user-attachments/assets/f2dcbc89-eee4-45ce-be6b-cdba83db510f)
 
-<p>Select PHP Manager</p>
+<p>Now go to the client vm, Networking, and click network settings</p>
 
 <h3>Step 37.</h3>
 
-![37  register php](https://github.com/user-attachments/assets/cd7c6077-fb37-4bdd-868c-41533b15e105)
+![37  go to client-1 NIC](https://github.com/user-attachments/assets/2dc4ba8f-f0f0-4b5e-9ceb-14746042b658)
 
-<p>Click "Register new PHP version" and navigate to the executable shown in the image above, then click OK</p>
+<p>Click the Network Interface Card</p>
 
 <h3>Step 38.</h3>
 
-![38  stop   start iis](https://github.com/user-attachments/assets/58155743-7fc0-4bdd-a7b3-e0f65d33039b)
+![38  enter private ip](https://github.com/user-attachments/assets/8b7c8349-9859-4f2b-88f7-7c97c6cbe0c0)
 
-<p>Right click osticket-vm and select stop. Then click it again and select start.</p>
+<p>Click DNS servers, select Custom, and enter the private IP address of the domain controller vm. This will set the domain controller vm as the DNS server for the client vm.</p>
 
 <h3>Step 39.</h3>
 
-![39  extract osticket](https://github.com/user-attachments/assets/bc5024bb-f106-4441-a2a2-0a00c6dcac0d)
+![39  restart client-1](https://github.com/user-attachments/assets/a7acfbc6-e5c5-4381-8116-31b732b2d5b4)
 
-<p>Go back to the osTicket-Installation-Files and extract osTicket</p>
+<p>Now go back to your virtual machines, select the client vm, click restart, then click Yes. This will apply the changes.</p>
 
 <h3>Step 40.</h3>
 
-![40  click extract](https://github.com/user-attachments/assets/cd301223-5ae3-40b1-852d-b8a5d82e61b6)
+![40  get client-1 public ip](https://github.com/user-attachments/assets/796140b3-c306-4762-8cd1-7ac306da3966)
 
-<p>Click extract</p>
+<p>Now go to the client vm's networking tab and grab the public IP address</p>
 
 <h3>Step 41.</h3>
 
-![41  move upload folder](https://github.com/user-attachments/assets/f8d48856-ea32-4912-9ba5-44927284086a)
+![41  enter ip into rdc](https://github.com/user-attachments/assets/5c312b50-548a-4446-be73-469eec98ab99)
 
-<p>Go inside the newly extracted folder and drag the "upload" folder to the wwwroot folder shown like in the image above</p>
+<p>Open remote desktop, enter the public IP of the client vm, then click Connect</p>
 
 <h3>Step 42.</h3>
 
-![42  rename to osTicket](https://github.com/user-attachments/assets/7f454d2d-0f2f-4795-9364-c050160f3b7d)
+![42  enter client-1 credentials](https://github.com/user-attachments/assets/4d92c105-f699-4946-83bf-1fa2073f6787)
 
-<p>Rename the upload folder to "osTicket"</p>
+<p>Enter the credentials of the client vm, then click OK</p>
 
 <h3>Step 43.</h3>
 
-![43  stop   start iis](https://github.com/user-attachments/assets/c85b98b8-b840-429b-9ae7-1a856cd14df9)
+![43  open up powershell](https://github.com/user-attachments/assets/2c6b904f-c1aa-4d31-a5aa-891d3a4fff84)
 
-<p>Go back to IIS Manager and repeat the stop and start method</p>
-
-<h3>Step 44.</h3>
-
-![44  browse 80](https://github.com/user-attachments/assets/e9957a64-34d7-4315-9597-1fa62968ea92)
-
-<p>Go to osticket-vm dropdown, Sites, Default Web Site, osTicket. Click osTicket then click Browse *:80 (http)</p>
+<p>Once inside the client vm, type and open Windows Powershell</p>
 
 <h3>Step 44.</h3>
 
-![45  results](https://github.com/user-attachments/assets/3c69fb7c-9dfa-4c21-9a1f-cd9a5a0db059)
+![44  ping dc-1](https://github.com/user-attachments/assets/f754e146-63d6-4250-823e-b616dc45cbb3)
 
-<p>The osTicket installer web page should now successfully open</p>
+<p>Ping the private IP address of the domain controller vm using the "ping" command to test connectivity</p>
+
+<h3>Step 44.</h3>
+
+![45  ping success](https://github.com/user-attachments/assets/81de23ad-3413-47f6-b0df-540282513331)
+
+<p>If every step was done right, the ping should have been successful</p>
 
 <h3>Step 46.</h3>
 
-![46  go to PHP manager](https://github.com/user-attachments/assets/65bb23a2-5a5f-46f2-9300-9e2b98d6959b)
+![46  run ipconfig](https://github.com/user-attachments/assets/dde672ae-df96-4b3b-a124-1359b5864aad)
 
-<p>Go back to IIS and select PHP Manager</p>
+<p>Now run the ipconfig /all command</p>
 
 <h3>Step 47.</h3>
 
-![47  go to enable extensions](https://github.com/user-attachments/assets/ad696c7f-3d86-4997-82bd-a5dfc7ff9d64)
+![47  DNS IP success](https://github.com/user-attachments/assets/c01cba43-a97b-4e3a-b9c1-a774b2796caa)
 
-<p>Click "Enable or disable an extension"</p>
+<p>This should show that the domain controller vm is successfully serving as a DNS server to the client vm by using its private IP address</p>
 
-<h3>Step 48.</h3>
+<h2>Active Directory Infrastructure Has Been Prepared!</h2>
 
-![48  enable these extensions](https://github.com/user-attachments/assets/172ac0d1-064a-4837-bfa5-e9c568401797)
-
-<p>Enable all of the extensions highlighted in the image above</p>
-
-<h3>Step 49.</h3>
-
-![49  results](https://github.com/user-attachments/assets/84464302-915d-4234-bea5-3b7fbd1723f7)
-
-<p>The extensions should now be enabled when refreshing the osTicket installer web page</p>
-
-<h3>Step 50.</h3>
-
-![50  rename](https://github.com/user-attachments/assets/52a73570-4b83-4de0-9357-3808190b0e2c)
-
-<p>Navigate to the file address highlighted in the image above and rename "ost-sampleconfig.php" to "ost-config.php"</p>
-
-<h3>Step 51.</h3>
-
-![51  go to properties](https://github.com/user-attachments/assets/0bfc0e16-5f59-4f87-a783-28172d3b3970)
-
-<p>Right click the file and go to properties</p>
-
-<h3>Step 52.</h3>
-
-![52  go to security](https://github.com/user-attachments/assets/b204ba14-eebc-46e2-9a39-95c3ea4f2a79)
-
-<p>Go to security then click advanced</p>
-
-<h3>Step 53.</h3>
-
-![53  remove permissions](https://github.com/user-attachments/assets/45e97433-0671-4447-9a2c-43d0c1f5ca9a)
-
-<p>Click disable inheritance then select "Remove all inherited permissions from this object"</p>
-
-<h3>Step 54.</h3>
-
-![54  add new permission](https://github.com/user-attachments/assets/a2c7171c-dcae-4c0b-94f6-6a5f9957a302)
-
-<p>Click "add" to add a new permission</p>
-
-<h3>Step 55.</h3>
-
-![55  everyone](https://github.com/user-attachments/assets/4724a837-eccf-4fe1-ade8-a0100efa2a38)
-
-<p>Click "Select a principal". Then type "everyone", click check names then click OK</p>
-
-<h3>Step 56.</h3>
-
-![56  full control](https://github.com/user-attachments/assets/34eaaef8-8af1-4003-8b99-0ed0dcf975c5)
-
-<p>Select "Full control" then click OK</p>
-
-<h3>Step 57.</h3>
-
-![57  apply](https://github.com/user-attachments/assets/9eefade5-ef2a-4fee-9de3-7dea65c32994)
-
-<p>Click "apply" then click OK</p>
-
-<h3>Step 58.</h3>
-
-![58  continue osticket setup](https://github.com/user-attachments/assets/c9d62a5b-ffdb-4451-bc03-5394c19060cc)
-
-<p>Go to the osTicket web page installer and click Continue</p>
-
-<h3>Step 59.</h3>
-
-![59  admin credentials](https://github.com/user-attachments/assets/4470be56-5c3a-4d4d-844e-be77caf89e06)
-
-<p>Fill out the following credentials and create a admin username and password like the image shown above.</p>
-
-<h3>Step 60.</h3>
-
-![60  install HeidiSQL](https://github.com/user-attachments/assets/e5485459-ff71-4757-a2b0-0bca5dae4fb9)
-
-<p>Install HeidiSQL</p>
-
-<h3>Step 61.</h3>
-
-![61  click install](https://github.com/user-attachments/assets/e57c53a8-8872-4650-bfd1-1b42b4876dea)
-
-<p>Click install</p>
-
-<h3>Step 62.</h3>
-
-![62  finish](https://github.com/user-attachments/assets/724ebbcf-8845-40de-b085-625aebd8cf15)
-
-<p>Select launch HeidiSQL and click finish</p>
-
-<h3>Step 63.</h3>
-
-![63  new connection](https://github.com/user-attachments/assets/e8da80b3-43de-48f0-b9bb-f547035cac2f)
-
-<p>Enter the username and password created for MySQL server. Example: root/root. Then click open</p>
-
-<h3>Step 64.</h3>
-
-![64  create new database](https://github.com/user-attachments/assets/fe8635fe-e08e-4b88-b9d2-7ab883f0ba2f)
-
-<p>Right click Unamed, then go to Create new, Database</p>
-
-<h3>Step 65.</h3>
-
-![65  create](https://github.com/user-attachments/assets/c9591d29-121b-43c1-87ff-9d793ba1f8a3)
-
-<p>Name the database "osTicket" then click OK</p>
-
-<h3>Step 66.</h3>
-
-![66  enter mysql credentials   install](https://github.com/user-attachments/assets/2f0cfc8a-bba5-4f81-bb31-b25cc7ceea3e)
-
-<p>Enter the MySQL credentials like shown in the image above on the osTicket web page installer. Then click install now</p>
-
-<h3>Step 67.</h3>
-
-![67  success osticket install](https://github.com/user-attachments/assets/2ea6003c-5b5b-4044-ad5a-7ed4546021a1)
-
-<p>Congratulations! You have now successfully installed osTicket on the designated machine.</p>
-<a href="http://localhost/osTicket/scp/login.php">Help Desk Login Page</a>
-<br>
-<a href="http://localhost/osTicket/">End User osTicket URL</a>
-
-</html>
+<p>In this part, we have successfully created two virtual machines, one running Windows Server to act as a Domain Controller, and one running Windows 10 to act as the client. In later parts, we will deploy Active Directory, run a script that will create users in the domain that can be logged into from the client VM, manage the accounts and update group policies, simulating a real life environment!</p>
 
 
 
