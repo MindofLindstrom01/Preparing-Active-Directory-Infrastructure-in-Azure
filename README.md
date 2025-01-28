@@ -1,5 +1,7 @@
 <p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
+  
+![1-1](https://github.com/user-attachments/assets/899a9de9-9453-47f4-bc7c-5f0f4a96e312)
+
 </p>
 
 <h1>Preparing-Active-Directory-Infrastructure-in-Azure</h1>
@@ -421,6 +423,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <a href="http://localhost/osTicket/scp/login.php">Help Desk Login Page</a>
 <br>
 <a href="http://localhost/osTicket/">End User osTicket URL</a>
+
+</html>
 
 
 
