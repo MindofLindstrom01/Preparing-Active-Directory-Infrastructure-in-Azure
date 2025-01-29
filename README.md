@@ -306,7 +306,7 @@ In the first part of the Active Directory project, I create two virtual machines
 <h2>Active Directory Infrastructure Has Been Prepared!</h2>
 
 <p>In this part, we have successfully created two virtual machines, one running Windows Server to act as a Domain Controller & DNS Server, and one running Windows 10 to act as the client. In later parts, we will deploy Active Directory, run a script that will create users in the domain that can be logged into from the client VM, manage the accounts and update group policies, simulating a real life IT environment!</p>
-<br/>
+
 Next part: <a href="https://github.com/MindofLindstrom01/deploying-active-directory-in-azure">Active Directory: Deploying Active Directory in Azure
 
 
