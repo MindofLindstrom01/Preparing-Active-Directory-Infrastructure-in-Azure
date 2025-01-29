@@ -9,7 +9,8 @@ In this project, I create two virtual machines, one running Windows Server to ac
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines)
+- Microsoft Azure
+- Virtual Machines
 - Remote Desktop Connection
 
 <h2>Operating Systems Used </h2>
